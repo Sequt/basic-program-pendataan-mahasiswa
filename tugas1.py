@@ -29,12 +29,12 @@ def menu():
 		menu()
 	elif pilih == 3:
 		index_update=-1
-		tampil()
+		getMinMax('max')
 		input("kembali menu utama") 
 		menu()
 	elif pilih ==4:
 		os.system('cls') 
-		getMinMax('max')
+		tampil()
 		input("kembali menu utama") 
 		menu()
 	elif pilih == 5 :
@@ -70,6 +70,6 @@ def pilih1():
 		ulang = input("Apakah Anda Ingin Mengulang (Y/ T)? ")	
 
 def getMinMax():
-  print("Hello from a function")
+  
 
 menu()
