@@ -34,7 +34,7 @@ def menu():
 		menu()
 	elif pilih ==4:
 		os.system('cls') 
-		tampil()
+		getMinMax('max')
 		input("kembali menu utama") 
 		menu()
 	elif pilih == 5 :
@@ -67,6 +67,9 @@ def pilih1():
 		siswaBaru.nama = (input("masukkan nama Mahasiswa : ")) 
 		siswaBaru.nilai = (int(input("masukkan nilai Mahasiswa : ")))
 		dataSiswa.append(siswaBaru) 
-		ulang = input("Apakah Anda Ingin Mengulang (Y/ T)? ")		
+		ulang = input("Apakah Anda Ingin Mengulang (Y/ T)? ")	
+
+def getMinMax():
+  print("Hello from a function")
 
 menu()
